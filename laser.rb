@@ -1,4 +1,4 @@
-class laser < Formula
+class Laser < Formula
   desc "another ls alternative"
   homepage "https://github.com/jmattaa/laser"
   url "https://github.com/jmattaa/laser/archive/v0.1.0.tar.gz"
