@@ -10,3 +10,4 @@ class Laser < Formula
     bin.install "./bin/lsr"
     system "make clean"
   end
+end
