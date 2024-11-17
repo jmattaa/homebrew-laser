@@ -1,9 +1,9 @@
 class Laser < Formula
   desc "another ls alternative"
   homepage "https://github.com/jmattaa/laser"
-  url "https://github.com/jmattaa/laser/archive/v0.2.0.tar.gz"
-  sha256 "cfea206351e97ba79e6fe1a8b561a9dfc42f826d7b434e308ce473a6c370e64c"
-  version "v0.2.0"
+  url "https://github.com/jmattaa/laser/archive/v0.2.1.tar.gz"
+  sha256 "c6892c1cd93a751681ed33b06f73fa6675c4340d2c037ab45f2d530f5774aa30"
+  version "v0.2.1"
 
   def install
     system "make release"
