@@ -6,15 +6,14 @@ class Laser < Formula
   license "MIT"
   version "v1.0.2"
 
-  depends_on "make" => :build
-  depends_on "gcc" => :build
+  depends_on "cmake" => :build
+  depends_on "lua"
 
   def install
-    system "make release"
-    bin.install "./bin/lsr"
+    system "cmake", "-S", ".", "-B", "build", *std_cmake_args
+    system "cmake", "--build", "build"
+    system "cmake", "--install", "build"
 
-    generate_completions_from_executable(bin/"lsr", "--completions")
-
-    system "make clean"
+    generate_completions_from_executable("build/lsr", "--completions")
   end
 end
