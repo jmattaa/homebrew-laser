@@ -1,10 +1,10 @@
 class Laser < Formula
   desc "another ls alternative"
   homepage "https://github.com/jmattaa/laser"
-  url "https://github.com/jmattaa/laser/archive/v0.2.4.tar.gz"
-  sha256 "0fbf4279a2385891a081b90cb31079e3b460a43c36319b9e445e1d7eb40ac070"
+  url "https://github.com/jmattaa/laser/archive/v1.0.2.tar.gz"
+  sha256 "5ca640f22efed1ce460297cd6f75712894866456f414d0010a4d56355795df8c"
   license "MIT"
-  version "v0.2.4"
+  version "v1.0.2"
 
   depends_on "cmake" => :build
   depends_on "lua"
@@ -14,9 +14,6 @@ class Laser < Formula
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
 
-    generate_completions_from_executable(build/"lsr", "--completions")
-
-    # clean
-    system "cmake" "--build", "build", "--target", "clean"
+    generate_completions_from_executable("build/lsr", "--completions")
   end
 end
