@@ -8,6 +8,7 @@ class Laser < Formula
 
   depends_on "cmake" => :build
   depends_on "lua"
+  depends_on "libgit2"
 
   def install
     system "cmake", "-S", ".", "-B", "build", *std_cmake_args, "-DLUA_SCRIPTS_INSTALL_PATH=#{prefix}/lsr"
