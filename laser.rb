@@ -2,7 +2,7 @@ class Laser < Formula
   desc "another ls alternative"
   homepage "https://github.com/jmattaa/laser"
   url "https://github.com/jmattaa/laser/archive/v1.4.7.tar.gz"
-  sha256 "7524351c3f3af9c60ff0d84d2aaa20c3772466678df1c017fc206b815a6b0ce6"
+  sha256 "a23e4e08749592930bc46bcae3b14fe4155fff60be4e2a5ce6ef519e03b91930"
   license "MIT"
   version "v1.4.7"
 
