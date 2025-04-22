@@ -1,10 +1,10 @@
 class Laser < Formula
   desc "another ls alternative"
   homepage "https://github.com/jmattaa/laser"
-  url "https://github.com/jmattaa/laser/archive/v1.5.0.tar.gz"
-  sha256 "c1825cfbefcc2d4122259db5eb91284bd784da7cc2d8c3d40ea03855131bbf65"
+  url "https://github.com/jmattaa/laser/archive/v1.5.1.tar.gz"
+  sha256 "34b8266e436de447ee1c5272d4bd84ae833bccba746bfad3f8483c97c33ec6d4"
   license "MIT"
-  version "v1.5.0"
+  version "v1.5.1"
 
   depends_on "cmake" => :build
   depends_on "lua"
